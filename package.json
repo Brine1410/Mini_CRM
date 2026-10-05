@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend:build": "bash backend/scripts/build.sh",
+    "backend": "bash backend/scripts/run.sh",
+    "backend:build:win": "powershell -ExecutionPolicy Bypass -File backend/scripts/build.ps1",
+    "backend:win": "powershell -ExecutionPolicy Bypass -File backend/scripts/run.ps1",
+    "fetch-libs": "powershell -ExecutionPolicy Bypass -File backend/scripts/fetch-libs.ps1"
   },
   "dependencies": {
     "react": "^18.3.1",

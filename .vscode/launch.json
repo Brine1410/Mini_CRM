@@ -1,0 +1,21 @@
+{
+  // Press F5 to run/debug the servlet backend in VS Code
+  // (needs the "Extension Pack for Java" extension).
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Mini CRM API",
+      "request": "launch",
+      "mainClass": "com.minicrm.Main",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "CRM_PORT": "8080"
+        // To run against MySQL instead of the embedded H2 database, use e.g.:
+        // "CRM_DB_URL": "jdbc:mysql://localhost:3306/?serverTimezone=UTC",
+        // "CRM_DB_USER": "root",
+        // "CRM_DB_PASSWORD": "secret"
+      }
+    }
+  ]
+}
